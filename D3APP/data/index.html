@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style> /* set the CSS */
+
+    body { font: 12px Arial;}
+    path { 
+        stroke: steelblue;
+        stroke-width: 2;
+        fill: none;
+    }
+    .axis path,
+    .axis line {
+        fill: none;
+        stroke: grey;
+        stroke-width: 1;
+        shape-rendering: crispEdges;
+    }
+    div{
+        float: left;
+        border:1px solid black;
+    }
+</style>
+
+
+
+ <body>
+	<table>
+    <tr>
+        <th id="table-area" style="width: 33%;"> </th>
+        <th id="middle-area" style="width:33%;">
+            <table >
+                <tr>
+                    <th id="line-area" style="height:40%;"> </th>
+                </tr>
+                <tr>
+                    <th id="Month-area" style="height:40%;"> </th>
+                </tr>
+
+            </table>
+
+        </th>
+        <th id="donut-area" style="width: 33%;"> </th>
+    </tr>
+
+</table>
+</body>
+
+<script src="http://d3js.org/d3.v3.js"></script>
+<script src="main/MainData.js"></script>
+<script src="table/TableController.js"></script>
+<script src="donutGraph/GaugeController.js"></script>
+<script src="linearGraph/LinearGraphController.js"></script>
+<script src="main/MainController.js"></script>
+
+
+<script src="MainController.js">
+
+	var mine = MainController;
+	mine.init({areaId:"line-area"});
+
+</script>
